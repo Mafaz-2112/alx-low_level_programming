@@ -3,9 +3,9 @@
 /**
  * main - Entary point
  *
- * Rescreption: using sizeof to print the size of various types
+ * Descreption: using sizeof to print the size of various types
  *
- * Return: aleays 0 (success)
+ * Return: always 0 (success)
 */
 
 int main(void)
