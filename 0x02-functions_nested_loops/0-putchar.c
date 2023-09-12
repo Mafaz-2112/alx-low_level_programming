@@ -4,7 +4,7 @@
  * main - entry point
  * description: prints _putchar prototype
  *
- * return: always 0 (success)
+ * Return: always 0 (success)
 */
 
 int main(void)
