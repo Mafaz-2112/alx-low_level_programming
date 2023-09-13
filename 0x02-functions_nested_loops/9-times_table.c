@@ -2,11 +2,6 @@
 
 /**
  * times_table - print the 9 times table
- *
- * Example table
- * 0, 0, 0, 0, ...
- * 0, 1, 2, 3, ..
- *
 */
 
 void times_table(void)
@@ -15,15 +10,13 @@ void times_table(void)
 
 	for (num = 0; num < 10; num++)
 	{
-
 		for (mult = 0; mult < 10; mult++)
 		{
-		       prod = num * mult;
+		       prod = mult * num;
 			if (mult == 0)
 			{
-			       _putchar(k + '0');
+			       _putchar(prod + '0');
 			}
-
 			if (prod < 10 && mult != 0)
 			{
 				_putchar(',');
