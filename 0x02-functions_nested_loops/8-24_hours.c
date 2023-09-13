@@ -1,25 +1,23 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - entry pint
- *
  * jack_bauer - ptints every minte of the day
 */
 
 void jack_bauer(void)
 {
-	for (int hour = 0; hour < 24; hour++)
+	int min, hr;
+
+	for (hr = 0; hr < 24; hr++)
 	{
-		for (int minute = 0; minute < 60; minute++)
+		for (min = 0; min < 60; min++)
 		{
-			printf("%02d:%02d\n", hour, minute);
+			_putchar((hr / 10) + 48);
+			_putchar((hr % 10) + 48);
+			_putchar(':');
+			_putchar((min / 10) + 48);
+			_putchar((min % 10) + 48);
+			_putchar('\n');
 		}
 	}
-}
-
-	int main(void)
-{
-	printf("Jack Bauer's Day:\n");
-	jack_bauer();
-	return (0);
 }
