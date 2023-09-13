@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * times_table - print the 9 times table
@@ -8,6 +8,7 @@
  * 0, 1, 2, 3, ..
  *
 */
+
 void times_table(void)
 {
 	int num, mult, prod;
@@ -22,14 +23,11 @@ void times_table(void)
 
 			prod = num * mult;
 
-			/*
-			 * put space if ptoduct is a single number
-			 * place the firist digit if its tow numbers
-			*/
 			if (prod <= 9)
 				_putchar(' ');
 			else
 				_putchar((prod / 10) + 48); /*get first digit*/
+
 			_putchar((prod % 10) + 48); /*grt the second digit*/
 		}
 		_putchar('\n');
