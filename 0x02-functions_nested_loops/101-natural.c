@@ -1,23 +1,22 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - entry point
+ *main - check for multiples of 3 and 5
  *
- * Descreption : computes th sum of
- *
- * Return: always 0 (success)
-*/
+ *Return: 0 always
+ */
 
 int main(void)
 {
-	int sum, num;
+	int x = 1024, y, sum = 0;
 
-	for (num = 0; num < 1024; num++)
+	for (y = 0; y < x; y++)
 	{
-		if ((num % 3 == 0) || (num % 5 == 0))
-			sum += num;
+		if ((y % 3 == 0) || (y % 5 == 0))
+		{
+			sum = sum + y;
+		}
 	}
-	printf("%d/n", sum);
-
+	printf("%d\n", sum);
 	return (0);
 }
